@@ -35,6 +35,10 @@ body {
   text-decoration: underline;
 }
 
+.nav-list li {
+  margin-right: 2em
+  }
+
 
 .nav-list .list-item {
   display: inline-block;
@@ -90,7 +94,7 @@ footer {
   text-decoration-color: black;
 }
 
-@media all and (max-width: 480px) {
+@media all and (max-width:600px) {
   .navbar {
     flex-direction: column;
     position: relative;
