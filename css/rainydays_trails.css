@@ -1,0 +1,43 @@
+body {
+  min-height: 100vh;
+}
+
+.jacket_img {
+  max-height: auto;
+  max-width: 200px;
+}
+
+.size {
+  max-height: 20px;
+}
+
+.container {
+  margin: 1em;
+  padding: 4em;
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+}
+.container .text {
+  margin: 1em;
+  padding: 0.5em;
+}
+
+.buy {
+  background-color: #1A410A;
+  height: 2.5em;
+  border-radius: 5px;
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.buy:hover {
+  background-color: black;
+  color: white;
+}
+
+.button {
+  margin-top: 0.5em;
+}/*# sourceMappingURL=rainydays_trails.css.map */

@@ -1,0 +1,77 @@
+@font-face {
+  font-family: "Roboto, Lato";
+  src: url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,500;1,700;1,900&display=swap") format("truetype");
+}
+
+.jacket {
+  font-size: 20px;
+  margin: 0;
+}
+
+.jacket_1 {
+  font-weight: lighter;
+  text-decoration: none;
+  color: black;
+}
+
+h3,
+h4 {
+  font-weight: lighter; 
+}
+
+.jacket_img1 {
+  max-width: auto;
+  height: 241px;
+}
+
+.jacket_img2 {
+  max-width: auto;
+  height: 241px;
+}
+
+.jacket_img3 {
+  max-width: auto;
+  height: 241px;
+}
+
+.jacket_img4 {
+  max-width: auto;
+  height: 241px
+}
+
+.jacket_img5 {
+  max-width: auto;
+  height: 241px;
+}
+
+.jacket_img6 {
+  max-width: auto;
+  height: 241px;
+}
+
+.jacket_img7 {
+  max-width: auto;
+  height: 241px;
+}
+
+.container {
+  padding: 2em;
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+}
+.container .jacket {
+  padding: 1em;
+ 
+}
+
+.jacket {
+  display: flex;
+  justify-content: center;
+  }
+
+
+
+
+/*# sourceMappingURL=jackets.css.map */

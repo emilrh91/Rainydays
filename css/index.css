@@ -1,0 +1,49 @@
+
+
+.background {
+    background-image: url('/images/Homepage1.jpg'), url('/images/Homepage2.jpg');
+    background-position: top, bottom;
+    height: 1100px;
+    background-position: center, center;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: cover, cover;
+    position: relative, ;
+}
+
+.explore {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  min-height: 150vh;
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+  color: white;
+
+}
+
+.explore_men {
+  margin: 10px;
+}
+
+.explore_men,
+.explore_women {
+background-color: transparent;
+width: 7em;
+height: 1,5em;
+border-radius: 10px;
+color: white;
+font-family: 'Lato', sans-serif;
+font-size: 20px;
+text-decoration: none;
+border:solid 2px white;
+
+}
+
+
+.explore_men:hover,
+.explore_women:hover {
+  background: white;
+  color: black;
+
+}
