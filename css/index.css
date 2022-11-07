@@ -1,4 +1,6 @@
-
+body {
+  max-height: 120vh;
+}
 
 .background {
     background-image: url('/images/Homepage1.jpg'), url('/images/Homepage2.jpg');
