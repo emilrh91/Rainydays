@@ -1,6 +1,4 @@
-body {
-  max-height: 120vh;
-}
+
 
 .background {
     background-image: url('/images/Homepage1.jpg'), url('/images/Homepage2.jpg');
@@ -9,7 +7,7 @@ body {
     background-position: center, center;
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-size: cover, cover;
-    position: relative, ;
+    position: relative ;
 }
 
 .explore {
