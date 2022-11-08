@@ -1,0 +1,21 @@
+
+body { 
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .summary {
+    display: flex;
+    display: block;
+    justify-content: left;
+    max-inline-size: 320px;
+    margin: auto;
+    padding: 2em;
+    
+  
+  }
+
+  footer {
+    margin-top: auto;
+  }  
