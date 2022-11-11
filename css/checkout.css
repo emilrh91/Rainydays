@@ -3,41 +3,82 @@ body {
 }
 
 main {
+  width: var(--full-size);
+  height: var(--full-size);
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  
 }
 
-.container {
-  margin: 1em;
-  padding: 4em;
-  display: grid;
-  grid-gap: 1em;
+section h1 {
+  font-family: 'Lato', Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: lighter;
+  margin-top: 2em;
+  
 }
 
-fieldset {
-  border: 0;
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.form_input {
-  display: block;
+.card {
+  width: 400px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 5px #eee;
+  padding: 20px;
+  margin-top: 20px;
 }
 
-fieldset {
-  font-size: 16px;
+.form-field {
+  display: flex;
+  flex-direction: column;
+  height: 70px;
+  margin-bottom: 5px;
 }
 
-.checkout {
-  background-color: green;
-  padding: 5px;
-  border-radius: 10px;
-  margin-top: 4px;
+.form-field label {
+  font-size: 18px;
+  margin-bottom: 5px;
 }
 
-.checkout:hover {
-  color: white;
-  background-color: black;
+.form-field input, button {
+  height: 40px;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 18px;
+  border: none;
+  box-shadow: 0px 0px 5px 5px #ccc;
 }
 
-footer {
-  margin-top: auto;
-}/*# sourceMappingURL=checkout.css.map */
+.form-field input:hover, button:hover {
+  box-shadow: 0px 0px 2px 2px #60649D;
+}
+
+.form-field input:focus-visible {
+  outline: none;
+  box-shadow: 0px 0px 2px 2px #60649D;
+}
+.form-field input:invalid {
+  border: 1px solid red;
+}
+
+.form-field input:valid {
+  border: 1px solid green;
+}
+
+button {
+  background-color: #212665;
+  color: #fff;
+}
+
+.summary {
+  padding: 20px;
+  margin-top: 20px;
+  
+ 
+  
+}

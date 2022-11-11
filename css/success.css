@@ -16,6 +16,10 @@ body {
   
   }
 
+  h2 {
+    margin-bottom: 1em;
+  }
+
   footer {
     margin-top: auto;
   }  

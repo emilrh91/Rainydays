@@ -1,22 +1,28 @@
-@font-face {
-  font-family: "Roboto, Lato";
-  src: url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,500;1,700;1,900&display=swap") format("truetype");
-}
-
 .jacket {
   font-size: 20px;
   margin: 0;
 }
 
+h1 {
+margin-top: 2em;
+margin-left: 2em;
+font-family: 'Lato', Verdana, Geneva, Tahoma, sans-serif;
+font-weight: 500;
+font-size: 30px;
+}
 .jacket_1 {
-  font-weight: lighter;
   text-decoration: none;
   color: black;
 }
 
 h3,
 h4 {
-  font-weight: lighter; 
+  font-family: 'Lato';
+  font-weight: 500; 
+}
+
+h4 {
+  font-weight: 300;
 }
 
 .jacket_img1 {
@@ -61,9 +67,11 @@ h4 {
   grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
   grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
 }
+
 .container .jacket {
   padding: 1em;
- 
+  box-shadow: 5px 5px 5px 5px #ccc;
+  margin-right: 34px;
 }
 
 .jacket {

@@ -9,6 +9,7 @@
     <meta name="description" content="Pushing the comfort zone" />
     <link href="css/styles.css" rel="stylesheet" />
     <link href="css/checkout.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,500;1,700;1,900&display=swap" rel="stylesheet" />
 
   </head>
 
@@ -33,45 +34,61 @@
       </nav>          
     </header>
 
-    <main>
-      <div class="container">
-          <div>
-            <form action="success.html" method="">
-                              
-                    <h2>Submit your details</h2>
-                    <label for="name">Name</label>
-                    <input type="text" name="name" id="name" class="form_input" required>
-                    <label for="name">Adress</label>
-                    <input type="text" name="adress" id="adress" class="form_input" required>
-                    <label for="email">E-mail</label>
-                    <input type="email" name="email" id="email" class="form_input" required>
-                    <label for="phone">Phone number</label>
-                    <input type="tel" name="phone" id="phone" class="form_input" required>
-                    <label for="ccn">Card number</label>
-                    <input type="tel" name="ccn" id="ccn" class="form_input" inputmode="numeric" maxlength="19" placeholder="xxxx xxxx xxxx xxxx"class="form_input"required>
-                    <label for="ccn">CVC</label>
-                    <input type="tel" name="cvc" id="ccn" class="form_input" maxlength="3" placeholder="xxx"required>
-                    <label for="ccn">Expiration date</label>
-                    <input type="tel" name="exp" id="month" class="form_input" maxlength="2" placeholder="MM"  class="exp">
-                    <input type="tel" name="exp" id="month" class="form_input" maxlength="2" placeholder="YY"  class="exp">
-                    <input type="submit" value="CHECKOUT" class="checkout">                 
-            </form>
-            <div>
-          
-       
-            <div class="summary">
-                <h2>Summary</h2>
-                <p>1 x Rainydays trails $199</p>
-                <p>Size M</p>
-                <p>Black</p>
-                <p class="shipping">Shipping (2-3 business days) Free</p>
-                <p>___________________________</p>
-                <p>Rainydays trails $159,2</p>
-                <p>Vat $39,8</p>
-                <h4>Total $199</h4>
+    <main>      
+        <section>
+          <h1>Sign Up</h1>
+          <form action="success.html" class="card">
+            <div  class="form-field">
+              <label for="username">Name</label>
+              <input type="text" id="name" name="name" minlength="3" required />              
             </div>
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required  placeholder="e.g abi.abu@outlook.com"/>              
+            </div>
+            <div class="form-field">
+              <label for="adress">Adress</label>
+              <input type="Adress" id="Adress" name="Adress" required />
+            </div>
+            <div class="form-field">
+              <label for="tel">Phone Number</label>
+              <input type="tel" id="tel" name="tel" required />
+            </div>
+            <div class="form-field">
+              <label for="ccn">Card number</label>
+              <input type="ccn" id="ccn" name="ccn" required />
+            </div>
+            <div class="form-field">
+              <label for="cvc" >CVC</label>
+              <input type="tel" id="cvc" name="cvc" required />
+            </div>
+            <div class="form-field">
+              <label for="cc-expires">Expiration date</label>
+              <input type="tel" id="cc-expires"  name="cc-expires" maxlength="7" placeholder="MM / YY" required /> 
+                       
+
+            </div>
+            <div class="form-field">
+              <button type="submit">Submit</button>
+            </div>
+          </form>
+          
+        </div>
+        </section>
+        <section class="summary">          
+            <h2>Summary</h2>
+            <p>1 x Rainydays trails $199</p>
+            <p>Size M</p>
+            <p>Black</p>
+            <p class="shipping">Shipping (2-3 business days) Free</p>
+            <p>___________________________</p>
+            <p>Rainydays trails $159,2</p>
+            <p>Vat $39,8</p>
+            <h4>Total $199</h4>
+        </section>        
+                 
         
-      </div>       
+      
     </main>
 
     <footer>
@@ -91,5 +108,7 @@
     toggleButton.addEventListener('click', () => {
       naviList.classList.toggle('active');
     })
+        
+    
   </script>
 </html>
