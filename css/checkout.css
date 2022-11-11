@@ -14,9 +14,8 @@ main {
 
 section h1 {
   font-family: 'Lato', Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: lighter;
   margin-top: 2em;
-  
+  font-weight: 500;  
 }
 
 section {
