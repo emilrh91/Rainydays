@@ -93,7 +93,9 @@ footer {
 @media all and (max-width:600px) {
   .navbar {
     flex-direction: column;
-    position: relative;
+    position: fixed;
+    width: 100%;
+    background: white;
     
   }
   .menu {
