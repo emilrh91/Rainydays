@@ -3,8 +3,6 @@ body {
 }
 
 main {
-  width: var(--full-size);
-  height: var(--full-size);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,72 +10,78 @@ main {
   
 }
 
-section h1 {
-  font-family: 'Lato', Verdana, Geneva, Tahoma, sans-serif;
-  margin-top: 2em;
-  font-weight: 500;  
+.form-field input {
+  padding: 8px;
+  margin-bottom: 10px;
+  }
+
+  .form-field {
+    display: flex;
+    flex-direction: column;
+  }
+
+.card-details {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  font-size: 24px;
+  color: #333;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#jacketId, #selectedSize, #selectedColor {
+  font-weight: bold;
 }
 
 section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.card {
-  width: 400px;
-  border-radius: 5px;
-  box-shadow: 0px 0px 5px 5px #eee;
   padding: 20px;
-  margin-top: 20px;
+  justify-content: center;
 }
 
-.form-field {
-  display: flex;
-  flex-direction: column;
-  height: 70px;
-  margin-bottom: 5px;
-}
-
-.form-field label {
-  font-size: 18px;
-  margin-bottom: 5px;
-}
-
-.form-field input, button {
-  height: 40px;
-  border-radius: 5px;
-  padding: 10px;
-  font-size: 18px;
-  border: none;
-  box-shadow: 0px 0px 5px 5px #ccc;
-}
-
-.form-field input:hover, button:hover {
-  box-shadow: 0px 0px 2px 2px #60649D;
-}
-
-.form-field input:focus-visible {
-  outline: none;
-  box-shadow: 0px 0px 2px 2px #60649D;
-}
-.form-field input:invalid {
-  border: 1px solid red;
-}
-
-.form-field input:valid {
-  border: 1px solid green;
-}
-
-button {
-  background-color: #212665;
+.form-field input[type="submit"] {
+  background-color: #333;
   color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
 }
 
-.summary {
-  padding: 20px;
-  margin-top: 20px;
+.form-field input[type="submit"]:hover {
+  background-color: #555;
+}
+
+.submit{
+  background-color: #0A3641;
+  height: 2.5em;
+  border-radius: 10px;
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  width: 5em;
+  margin-top: 1em; 
+  width: 100%;
+}
+
+.submit:hover {
+  background-color: #0A3641;
   
- 
-  
+  cursor: pointer;
+}
+
+.error-message {
+  color: red;
 }

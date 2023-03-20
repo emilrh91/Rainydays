@@ -1,0 +1,87 @@
+{
+    "jackets": [
+      {
+        "id": 1,
+        "imgSrc": "images/RainyDays_Jacket4.png",
+        "imgAlt": "Picture of Rainydays trails. The colors are black and white with yellow details.",
+        "jacketName": "Rainydays Trails 1",
+        "price": "$199",
+        "sizes": ["XS", "S", "M", "L"],
+        "colors": ["Black", "Red"],
+        "link": "details.html?id=jacket1",
+        "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius quis pharetra, sagittis ornare urna pellentesque massa. Netus tempor, et nulla bibendum volutpat purus, sagittis eget luctus. Vestibulum ullamcorper magna eget viverra montes, molestie. Massa leo ultricies dolor eget."
+      },
+      {
+        "id": 2,
+        "imgSrc": "images/RainyDays_Jacket2.png",
+        "imgAlt": "picture of rainydays trails, the color of the jacket is a lighter black with some white details",
+        "jacketName": "Rainydays Trails 2",
+        "title": "Rainydays Trails",
+        "price": "$209",
+        "sizes": ["S", "M", "L", "XL"],
+        "colors": ["Red", "Blue", "Grey"],
+        "link": "details.html?id=jacket2",
+        "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius quis pharetra, sagittis ornare urna pellentesque massa. Netus tempor, et nulla bibendum volutpat purus, sagittis eget luctus. Vestibulum ullamcorper magna eget viverra montes, molestie. Massa leo ultricies dolor eget."
+      },
+      {
+        "id": 3,
+        "imgSrc": "images/RainyDays_Jacket3.png",
+        "imgAlt": "picture of rainydays trails, color are red and black with white details",
+        "jacketName": "Rainydays Trails 3",
+        "title": "Rainydays Trails",
+        "price": "$219",
+        "sizes": ["S", "M"],
+        "colors": ["Orange", "White", "Red"],
+        "link": "details.html?id=jacket3",
+        "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius quis pharetra, sagittis ornare urna pellentesque massa. Netus tempor, et nulla bibendum volutpat purus, sagittis eget luctus. Vestibulum ullamcorper magna eget viverra montes, molestie. Massa leo ultricies dolor eget."
+      },
+      {
+        "id": 4,
+        "imgSrc": "images/RainyDays_Jacket1.png",
+        "imgAlt": "picture of rainydays trails, colors orange, and grey with black details",
+        "jacketName": "Rainydays Trails 4",
+        "title": "Rainydays Trails",
+        "price": "$229",
+        "sizes": ["S", "M", "L"],
+        "colors": ["Grey", "White", "Red"],
+        "link": "details.html?id=jacket4",
+        "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius quis pharetra, sagittis ornare urna pellentesque massa. Netus tempor, et nulla bibendum volutpat purus, sagittis eget luctus. Vestibulum ullamcorper magna eget viverra montes, molestie. Massa leo ultricies dolor eget."
+      },
+      {
+        "id": 5,
+        "imgSrc": "images/RainyDays_Jacket5.png",
+        "imgAlt": "picture of rainydays trails, color of the jacket is grey",
+        "jacketName": "Rainydays Trails 5",
+        "title": "Rainydays Trails",
+        "price": "$239",
+        "sizes": ["S", "M", "L"],
+        "colors": ["Black", "White", "Red"],
+        "link": "details.html?id=jacket5",
+        "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius quis pharetra, sagittis ornare urna pellentesque massa. Netus tempor, et nulla bibendum volutpat purus, sagittis eget luctus. Vestibulum ullamcorper magna eget viverra montes, molestie. Massa leo ultricies dolor eget."
+      },
+      {
+        "id": 6,
+        "imgSrc": "images/RainyDays_Jacket6.png",
+        "imgAlt": "picture of rainydays trails, color of the jacket is black and grey with white details",
+        "jacketName": "Rainydays Trails 6",
+        "title": "Rainydays Trails",
+        "price": "$249",
+        "sizes": ["S", "M", "L"],
+        "colors": ["Black", "wWite"],
+        "link": "details.html?id=jacket6",
+        "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius quis pharetra, sagittis ornare urna pellentesque massa. Netus tempor, et nulla bibendum volutpat purus, sagittis eget luctus. Vestibulum ullamcorper magna eget viverra montes, molestie. Massa leo ultricies dolor eget."
+      },
+    {
+        "id": 7,
+        "imgSrc": "images/RainyDays_Jacket7.png",
+        "imgAlt": "picture of rainydays trails, color of the jacket is armygreen",
+        "jacketName": "Rainydays Trails 7",
+        "title": "Rainydays Trails 7",
+        "price": "$259",
+        "sizes": ["S", "M", "L"],
+        "colors": ["Black", "Green"],
+        "link": "details.html?id=jacket7",
+        "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius quis pharetra, sagittis ornare urna pellentesque massa. Netus tempor, et nulla bibendum volutpat purus, sagittis eget luctus. Vestibulum ullamcorper magna eget viverra montes, molestie. Massa leo ultricies dolor eget."
+    }
+
+]}

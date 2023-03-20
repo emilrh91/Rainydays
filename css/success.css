@@ -1,17 +1,14 @@
 
-body { 
-    min-height: 100vh;
+main { 
     display: flex;
-    flex-direction: column;
+        justify-content: center;
   }
 
-  .summary {
+  .success-message {
     display: flex;
-    display: block;
-    justify-content: left;
-    max-inline-size: 320px;
-    margin: auto;
+    display: block;         
     padding: 2em;
+    margin-top: 3em;
     
   
   }

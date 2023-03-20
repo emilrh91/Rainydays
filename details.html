@@ -9,7 +9,9 @@
     <link href="css/styles.css" rel="stylesheet" />
     <link href="css/rainydays_trails.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,500;1,700;1,900&display=swap" rel="stylesheet" />
-    <script>
+    <script type ="module"  src="script/details.js"></script>
+
+    <script type="module">
       (function(h,o,t,j,a,r){
           h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
           h._hjSettings={hjid:3393361,hjsv:6};
@@ -33,6 +35,7 @@
           <li class="list-item"><a href="jackets_women.html" class="women">WOMEN </a></li>
           <li class="list-item"><a href="about.html" class="about">ABOUT</a></li>
           <li class="list-item"><a href="contact.html" class="contact">CONTACT</a> </li>
+
         </ul>        
         <div class="menu" id="toggle-button">
           <div class="menu-line"></div>
@@ -40,47 +43,35 @@
           <div class="menu-line"></div>
         </div> 
       </nav>          
-    </header>
+      </header>
+      <main>
+  <div class="jacket-details">
+    <div class="jacket-image">
+      <img class="jacket-img" src="" alt="" />
+    </div>
+    <div class="jacket-info">
+      <h2 class="jacket-name"></h2>
+      <p class="jacket-price" id="price"></p>
+      <label for="size">Size:</label>
+      <select id="size" name="size"></select>
+      <br />
+      <label for="color">Color:</label>
+      <select id="color" name="color"></select>
+      <br />
+      <button class="buy-now">BUY NOW</button>
+      <p class="jacket-lorem"></p>
 
-    <main>
-      <div class="container">
-          <img src="images/RainyDays_Jacket4.png" alt="picture of rainydays trails, colors orange, and grey with black details" class="jacket_img">
-               
-          <div class="text">      
-            <h3>Rainydays trails</h3>
-            <h4>$199</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius quis pharetra, sagittis ornare urna pellentesque massa. Netus tempor, et nulla bibendum volutpat purus, sagittis eget luctus. Vestibulum ullamcorper magna eget viverra montes, molestie. Massa leo ultricies dolor eget.</p>
-            <section class="jacket-options">
-          
-            <div class=buttons>   
-            <label for="size">Size</label>
-            <select id="size" name="size" class="size">
-              <option value="Small">Medium</option>
-              <option value="Medium">Medium</option>
-              <option value="Large">Medium</option>
-            </select>
-            <label for="Color">Color</label>
-              <select id="Color" name="Color" class="size">
-              <option value="Black">Black</option>
-              <option value="Black">Black</option>
-              <option value="Black">Black</option>            
-          </select> 
-            <div class="button">      
-              <a href="checkout.html" class="buy"Buy Now>BUY NOW</a>
-            </div>     
-          </div>
-        </div> 
-        </div>  
-        </main>
+    </div>
+  </div>
+</main>
 
-
-        <footer>
+      <footer>
           <div class="footermenu">
             <a href="about.html" class="about_footer">About us</a>
             <a href="contact.html" class="contact_footer">Contact</a>      
             <p class="footercopyright">&copy; Rainydays</p>  
           </div>    
-        </footer>
+      </footer>
     </body>
     <script>
       const toggleButton = document.getElementById('toggle-button');

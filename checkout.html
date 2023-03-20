@@ -8,6 +8,7 @@
     <meta name="description" content="Pushing the comfort zone" />
     <link href="css/styles.css" rel="stylesheet" />
     <link href="css/checkout.css" rel="stylesheet" />
+    <script type="module" src="script/checkout.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,500;1,700;1,900&display=swap" rel="stylesheet" />
 <script>
   (function(h,o,t,j,a,r){
@@ -33,6 +34,8 @@
           <li class="list-item"><a href="jackets_women.html" class="women">WOMEN </a></li>
           <li class="list-item"><a href="about.html" class="about">ABOUT</a></li>
           <li class="list-item"><a href="contact.html" class="contact">CONTACT</a> </li>
+         
+
         </ul>        
         <div class="menu" id="toggle-button">
           <div class="menu-line"></div>
@@ -42,61 +45,48 @@
       </nav>          
     </header>
 
-    <main>      
-        <section>
-          <h1>Submit your details</h1>
-          <form action="success.html" class="card">
-            <div  class="form-field">
-              <label for="username">Name</label>
-              <input type="text" id="name" name="name" minlength="3" required />              
-            </div>
-            <div class="form-field">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" required  placeholder="e.g abi.abu@outlook.com"/>              
-            </div>
-            <div class="form-field">
-              <label for="adress">Adress</label>
-              <input type="Adress" id="Adress" name="Adress" required />
-            </div>
-            <div class="form-field">
-              <label for="tel">Phone Number</label>
-              <input type="tel" id="tel" name="tel" required />
-            </div>
-            <div class="form-field">
-              <label for="ccn">Card number</label>
-              <input type="ccn" id="ccn" name="ccn" required />
-            </div>
-            <div class="form-field">
-              <label for="cvc" >CVC</label>
-              <input type="tel" id="cvc" name="cvc" required />
-            </div>
-            <div class="form-field">
-              <label for="cc-expires">Expiration date</label>
-              <input type="tel" id="cc-expires"  name="cc-expires" maxlength="7" placeholder="MM / YY" required /> 
-                       
-
-            </div>
-            <div class="form-field">
-              <button type="submit">Submit</button>
-            </div>
-          </form>
-          
-        </div>
-        </section>
-        <section class="summary">          
-            <h2>Summary</h2>
-            <p>1 x Rainydays trails $199</p>
-            <p>Size M</p>
-            <p>Black</p>
-            <p class="shipping">Shipping (2-3 business days) Free</p>
-            <p>___________________________</p>
-            <p>Rainydays trails $159,2</p>
-            <p>Vat $39,8</p>
-            <h4>Total $199</h4>
-        </section>        
-                 
-        
+    <main>    
+      <section>
+      <h1>Checkout</h1>
+      <h2>Order Summary</h2>
+      <p>Jacket Name: <span id="jacketName"></span></p>
+      <p>Price: <span id="jacketPrice"></span></p>
+      <p>Selected Size: <span id="selectedSize"></span></p>
+      <p>Selected Color: <span id="selectedColor"></span></p>
+      <h2>Shipping Information</h2>
+      <form class="form-field" action="process-form.php" method="POST">
+        <div class="error-message"></div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address">
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city">
+        <label for="state">State:</label>
+        <input type="text" id="state" name="state">
+        <label for="zip">Zip:</label>
+        <input type="text" id="zip" name="zip">
+      <h2>Payment Information</h2>
       
+        
+        <label for="card-number">Card Number:</label>
+        <input type="text" id="card-number" name="card-number"><br>
+
+        <label for="exp-date">Expiration Date:</label>
+        <input type="text" id="exp-date" name="exp-date"><br>
+
+        <label for="cvv">CVV:</label>
+        <input type="text" id="cvv" name="cvv"><br>
+
+        
+      </form>
+      <div class="error-message"></div>
+
+      <button id="submitButton" type="submit" class="submit">Submit</button>
+
+      </section>     
     </main>
 
     <footer>

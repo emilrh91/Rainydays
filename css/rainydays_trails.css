@@ -2,7 +2,8 @@ body {
   min-height: 100vh;
 }
 
-.jacket_img {
+
+.jacket-img {
   max-height: auto;
   max-width: 300px;
 }
@@ -11,30 +12,46 @@ body {
   max-height: 20px;
 }
 
-.container {
+.jacket-details {
+  padding: 1em;
+  box-shadow: 5px 5px 5px 5px #ccc;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 5em;
   margin-bottom: 2em;
+  margin-left: 2em;
+  margin-right: 2em;
   }
 
-.container .text {
+.jacket-info {
   margin: 1em;
   padding: 0.5em;
   max-width: 600px;
   
 }
 
-.text {
+label {
+  font-weight: 500;
+  
+}
+
+select  {
+  cursor: pointer;
+  padding: 2px;
+  
+
+}
+
+.jacket-info {
   line-height: 2em;
 }
 
 
-.buy {
-  background-color: #1A410A;
+.buy-now {
+  background-color: #498630;
   height: 2.5em;
-  border-radius: 5px;
+  border-radius: 10px;
   color: white;
   font-family: "Lato", sans-serif;
   font-size: 20px;
@@ -42,13 +59,19 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 5px;
+  width: 10em;
+
 }
 
-.buy:hover {
+.buy-now:hover {
   background-color: black;
   color: white;
+  cursor: pointer;
 }
 
-.button {
-  margin-top: 0.5em;
-}/*# sourceMappingURL=rainydays_trails.css.map */
+.jacket-lorem {
+  margin-top: .5em; 
+}
+
+/*# sourceMappingURL=rainydays_trails.css.map */

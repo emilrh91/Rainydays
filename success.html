@@ -9,6 +9,7 @@
     <link href="css/styles.css" rel="stylesheet" />
     <link href="css/success.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,500;1,700;1,900&display=swap" rel="stylesheet" />
+    <script type ="module"  src="script/success.js"></script>
     <script>
       (function(h,o,t,j,a,r){
           h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
@@ -33,6 +34,7 @@
           <li class="list-item"><a href="jackets_women.html" class="women">WOMEN </a></li>
           <li class="list-item"><a href="about.html" class="about">ABOUT</a></li>
           <li class="list-item"><a href="contact.html" class="contact">CONTACT</a> </li>
+
         </ul>        
         <div class="menu" id="toggle-button">
           <div class="menu-line"></div>
@@ -41,40 +43,29 @@
         </div> 
       </nav>          
     </header>
-
     <main>
-        <div class="summary">
-            <h2>Order complete!</h2>
-            <h3>Your order is now complete.
-                expected delivery in 2-3 business days.<br><br>
-                Thank you for shopping at Rainydays</h3><br>
-            
-            <p>1 x Rainydays trails $199<br><br>
-                Size M<br><br>
-                Black
-                Shipping (2-3 business days) Free<br><br>
-                ___________________________<br><br>
-                Rainydays trails $159,2<br><br>
-                Vat $39,8</p><br>
-            <h4>Total $199</h4>
-        </div>
-    </main>
-
+    <div id="success-message" class="success-message">
+      <h1>Thank you for your order!</h1>
+      <p>You have successfully ordered a <span id="jacketName"></span> in size <span id="selectedSize"></span> and color <span id="selectedColor"></span>.</p>
+      <p>Your order will be shipped within 2 working days, and the estimated delivery date is <span id="deliveryDate"></span>.</p>
+      <p>The total cost of your order is <span id="jacketPrice"></span>.</p>
+    </div>
+    </main>    
+   
     <footer>
       <div class="footermenu">
         <a href="about.html" class="about_footer">About us</a>
         <a href="contact.html" class="contact_footer">Contact</a>      
         <p class="footercopyright">&copy; Rainydays</p>  
       </div>    
-    </footer>
+  </footer>
+</body>
+<script>
+  const toggleButton = document.getElementById('toggle-button');
+  const naviList = document.getElementById('navi-list');
 
-  </body>
-  <script>
-    const toggleButton = document.getElementById('toggle-button');
-    const naviList = document.getElementById('navi-list');
-
-    toggleButton.addEventListener('click', () => {
-      naviList.classList.toggle('active');
-    })
-  </script>
+  toggleButton.addEventListener('click', () => {
+    naviList.classList.toggle('active');
+  })
+</script>
 </html>
