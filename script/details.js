@@ -26,7 +26,6 @@ async function updateJacketDetails() {
   jacketImg.src = jacket.imgSrc;
   jacketImg.alt = jacket.imgAlt;
 
-  
   const sizeSelect = document.getElementById("size");
   jacket.sizes.forEach((size) => {
     const option = document.createElement("option");
@@ -40,21 +39,22 @@ async function updateJacketDetails() {
     option.text = color;
     colorSelect.add(option);
   });
-
-  
 }
 
 updateJacketDetails();
 
 buyNowBtn.addEventListener("click", redirectToCheckout);
 
-
 function redirectToCheckout() {
   const name = jacketName.textContent;
   const selectedSize = document.getElementById("size").value;
   const selectedColor = document.getElementById("color").value;
-  const jacketPrice = document.getElementById("price").textContent;
-  const url = `checkout.html?name=${name}&size=${selectedSize}&color=${selectedColor}&price=${jacketPrice}`;
-  window.location.href = url;
-}
+  const price = jacketPrice.textContent;
 
+  sessionStorage.setItem("name", name);
+  sessionStorage.setItem("size", selectedSize);
+  sessionStorage.setItem("color", selectedColor);
+  sessionStorage.setItem("price", price);
+
+  window.location.href = "checkout.html";
+}
