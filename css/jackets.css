@@ -31,6 +31,14 @@ h4 {
   margin-right: 5%;
 }
 
+.jacket-name {
+  margin-bottom: 0.5em;
+}
+
+.jacket-price {
+  margin-bottom: 0.5em;
+}
+
 @media all and (max-width: 600px) {
   .container {
     margin-left: 2%;
@@ -55,7 +63,8 @@ h4 {
   grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
   grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
 }
-.container .jacket {
+
+.jacket {
   padding: 1em;
   box-shadow: 5px 5px 5px 5px #ccc;
   margin-right: 34px;
@@ -64,7 +73,7 @@ h4 {
 }
 
 .modal {
-  position: fixed;
+  position: absolute;
   z-index: 1000;
   left: 0;
   top: 0;
@@ -73,17 +82,16 @@ h4 {
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.5);
   display: none;
-}
-
-.modal.show-modal {
-  display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.modal.show-modal {
+  display: flex;
+}
+
 .modal-content {
   background-color: #fefefe;
-  margin: 5% auto;
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
@@ -94,6 +102,7 @@ h4 {
   position: relative;
   display: flex;
   flex-direction: column;
+  border-radius: 8px;
 }
 
 @keyframes animatetop {
@@ -126,17 +135,13 @@ label {
 
 select {
   cursor: pointer;
-  padding: 3px;
+  padding: 2px;
   min-width: 5em;
 }
 
 label,
 select {
   margin-bottom: 1em;
-}
-
-.jacket-info {
-  line-height: 2em;
 }
 
 .buy-now {
@@ -153,6 +158,8 @@ select {
   align-items: center;
   padding: 5px;
   width: 10em;
+  transition: background-color 0.2s;
+  margin-bottom: 1em;
 }
 
 .buy-now:hover {
@@ -180,6 +187,12 @@ select {
 }
 
 @media (max-width: 900px) {
+  .modal-content {
+    margin: 5% auto;
+    height: auto;
+    overflow: auto;
+    max-height: 90%;
+  }
   .jacket-details-container {
     flex-direction: column;
     align-items: center;
@@ -196,6 +209,13 @@ select {
   .jacket-details-container {
     flex-direction: column;
     align-items: center;
+  }
+  .jacket-img {
+    max-height: auto;
+    max-width: 200px;
+  }
+  .jacket-name {
+    font-size: 16px;
   }
   .jacket-image {
     max-width: 100%;
@@ -222,7 +242,7 @@ select {
     justify-content: center;
     align-items: center;
     padding: 5px;
-    width: 7em;
+    width: 100%;
   }
 }
 @media (max-width: 400px) {
