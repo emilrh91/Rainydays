@@ -1,6 +1,6 @@
 .background {
   background-image: url("/images/Homepage1.jpg");
-  background-position: top, center;
+  background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -16,17 +16,15 @@
   color: white;
   padding-left: 5%;
 }
-
-.button-container {
+.explore .button-container {
   display: flex;
   gap: 10px;
 }
-
-.explore_men,
-.explore_women {
+.explore .button-container .explore_men,
+.explore .button-container .explore_women {
   background-color: transparent;
   width: 7em;
-  height: 1, 5em;
+  height: 1.5em;
   border-radius: 10px;
   color: white;
   font-family: "Lato", sans-serif;
@@ -35,9 +33,8 @@
   border: solid 2px white;
   text-align: center;
 }
-
-.explore_men:hover,
-.explore_women:hover {
+.explore .button-container .explore_men:hover,
+.explore .button-container .explore_women:hover {
   background: white;
   color: black;
 }
@@ -55,8 +52,11 @@
     align-items: center;
     justify-content: center;
   }
-  .explore_men,
-  .explore_women {
+  .explore .button-container {
+    flex-direction: column;
+  }
+  .explore .button-container .explore_men,
+  .explore .button-container .explore_women {
     background: rgba(0, 0, 0, 0.226);
   }
 }/*# sourceMappingURL=index.css.map */

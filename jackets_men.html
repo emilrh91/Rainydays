@@ -45,7 +45,7 @@
           </nav>          
         </header>
         <main>
-          <h1>Men's jackets</h1>
+          <h1 class="page-title">Men's jackets</h1>
           <div class="container"></div>
         </main>
         <div class="modal">
@@ -65,9 +65,11 @@
     <script>
       const toggleButton = document.getElementById('toggle-button');
       const naviList = document.getElementById('navi-list');
-  
+    
       toggleButton.addEventListener('click', () => {
         naviList.classList.toggle('active');
-      })
+        toggleButton.classList.toggle('menu-open');
+      });
     </script>
+  
   </html>

@@ -47,45 +47,66 @@
 
     <main>    
       <section>
-      <h1>Checkout</h1>
+      <h1 class="">Checkout</h1>
       <h2>Order Summary</h2>
       <p>Jacket Name: <span id="jacketName"></span></p>
       <p>Price: <span id="jacketPrice"></span></p>
       <p>Selected Size: <span id="selectedSize"></span></p>
       <p>Selected Color: <span id="selectedColor"></span></p>
       <h2>Shipping Information</h2>
+
       <form class="form-field" action="process-form.php" method="POST">
-        <div class="error-message"></div>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email">
-        <label for="address">Address:</label>
-        <input type="text" id="address" name="address">
-        <label for="city">City:</label>
-        <input type="text" id="city" name="city">
-        <label for="state">State:</label>
-        <input type="text" id="state" name="state">
-        <label for="zip">Zip:</label>
-        <input type="text" id="zip" name="zip">
-      <h2>Payment Information</h2>
+        <div class="form-field">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name">
+          <span class="error-message"></span>
+        </div>
+        <div class="form-field">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email">
+          <span class="error-message"></span>
+        </div>
+        <div class="form-field">
+          <label for="address">Address:</label>
+          <input type="text" id="address" name="address">
+          <span class="error-message"></span>
+        </div>
+        <div class="form-field">
+          <label for="city">City:</label>
+          <input type="text" id="city" name="city">
+          <span class="error-message"></span>
+        </div>
+        <div class="form-field">
+          <label for="state">State:</label>
+          <input type="text" id="state" name="state">
+          <span class="error-message"></span>
+        </div>
+        <div class="form-field">
+          <label for="zip">Zip:</label>
+          <input type="text" id="zip" name="zip">
+          <span class="error-message"></span>
+        </div>
+        <div class="form-field">
+          <label for="card-number">Card Details:</label>
+          <input type="text" id="card-number" name="card-number" maxlength="16" placeholder="Card Number">
+          <span class="error-message"></span>
+        </div>
+        <div class="form-field">
+          
+          <div class="date-container">
+            <input type="text" id="day" name="day" class="date-input" maxlength="2" placeholder="DD">
+            <input type="text" id="month" name="month" class="date-input" maxlength="2" placeholder="MM">
+          </div>
+          <span class="error-message"></span>
+        </div>
+        <div class="form-field">
+          
+          <input type="text" id="cvv" name="cvv" maxlength="3" placeholder="CVV">
+          <span class="error-message"></span>
+        </div>
       
-        
-        <label for="card-number">Card Number:</label>
-        <input type="text" id="card-number" name="card-number"><br>
-
-        <label for="exp-date">Expiration Date:</label>
-        <input type="text" id="exp-date" name="exp-date"><br>
-
-        <label for="cvv">CVV:</label>
-        <input type="text" id="cvv" name="cvv"><br>
-
-        
-      </form>
-      <div class="error-message"></div>
-
       <button id="submitButton" type="submit" class="submit">Submit</button>
-
+    </form>
       </section>     
     </main>
 
@@ -101,11 +122,11 @@
   <script>
     const toggleButton = document.getElementById('toggle-button');
     const naviList = document.getElementById('navi-list');
-
+  
     toggleButton.addEventListener('click', () => {
       naviList.classList.toggle('active');
-    })
-        
-    
+      toggleButton.classList.toggle('menu-open');
+    });
   </script>
+
 </html>

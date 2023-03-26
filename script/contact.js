@@ -65,10 +65,7 @@ function validateForm() {
         name: document.getElementById("name").value.trim(),
         email: document.getElementById("email").value.trim(),
         message: document.getElementById("message").value.trim(),
-      };
-      
-      console.log("Email to contact@rainydays.com would be sent with the following data:", templateParams); 
-      
+      };      
     }
   }
   

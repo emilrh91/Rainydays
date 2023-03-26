@@ -43,6 +43,7 @@
         </div> 
       </nav>          
     </header>
+    <main>
     <h1>Contact us</h1>
     <form id="contact-form">
       <div class="form-field">
@@ -68,11 +69,12 @@
       <button type="submit" id="submitButton">Submit</button>
     </form>
     <div class="visit">
-    <h3 >Vist us</h2>
+    <h3 >Visit us</h2>
     <p>Karl Johans Gate 1, 0154 Oslo</p>
     
     <div id="map"></div>
   </div>
+    </main>
 
       <footer>
         <div class="footermenu">
@@ -86,9 +88,11 @@
     <script>
       const toggleButton = document.getElementById('toggle-button');
       const naviList = document.getElementById('navi-list');
-  
+    
       toggleButton.addEventListener('click', () => {
         naviList.classList.toggle('active');
-      })
+        toggleButton.classList.toggle('menu-open');
+      });
     </script>
+  
   </html>

@@ -1,27 +1,43 @@
-
-
 .background {
     background-image: url('../images/about.jpg');
-    background-position: top, bottom;
-    height: 1100px;
-    background-position: center, center;
-    background-repeat: no-repeat, no-repeat, no-repeat;
-    background-size: cover, cover;
-    position: relative;
-}
-
-.about-text  {
+    background-position: center;
+    min-height: 1100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: static;
+  }
+  
+.about-text {
     display: flex;
     flex-direction: column;
     margin: auto;
-    margin-top: 10vh;
-    max-width: 390px;
+    max-width: 800px;
     background-color: rgba(255, 255, 255, 0.3);
-    border-radius: 5%;
-    padding: 5px;    
-    
-}
-
-p { 
-    font-size: 20px;
-}
+    border-radius: 5px;
+    padding: 50px;
+    text-align: justify;
+  }
+  
+.about-text h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 25px;
+  }
+  
+.about-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #444;
+  }
+  
+main {
+    padding-top: 8em;
+  }
+  
+@media (max-width: 768px) {
+    main {
+      padding-top: 10em;
+    }
+ }
+  
