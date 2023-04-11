@@ -139,9 +139,3 @@ function setErrorFor(input, message) {
   
   const submitButton = document.getElementById('submitButton');
   submitButton.addEventListener('click', submitForm);
-  
-  
-
-
-
- 
