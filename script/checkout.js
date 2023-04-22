@@ -2,7 +2,7 @@ const urlParams = new URLSearchParams(window.location.search);
 const jacketName = urlParams.get("name");
 const selectedSize = urlParams.get("size");
 const selectedColor = urlParams.get("color");
-const jacketPrice = urlParams.get("price")
+const jacketPrice = (parseFloat(urlParams.get("price")) / 100).toFixed(2);
 
 function displaySelectedOptions() {
   document.getElementById("jacketName").innerText = jacketName;

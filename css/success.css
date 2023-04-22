@@ -1,7 +1,14 @@
-main { 
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+main {
   display: flex;
   justify-content: center;
-  min-height: 90vh;
+  flex-grow: 1;
   margin-top: 2em;
 }
 
@@ -18,4 +25,4 @@ h1 {
 
 footer {
   margin-top: auto;
-}  
+}
