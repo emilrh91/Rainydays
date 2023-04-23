@@ -30,7 +30,7 @@ function validateForm() {
   const addressRegex = /^.{3,}$/;
   const cityRegex = /^.{3,}$/;
   const stateRegex = /^.{3,}$/;
-  const zipRegex = /^\d{4}$/;
+  const zipRegex = /^\d{2,10}$/;
   const cardNumberRegex = /^\d{16}$/;
   const cvvRegex = /^\d{3}$/;
   const expDateRegex = /^\d{2}$/;
