@@ -11,7 +11,7 @@ Rainydays is an outdoor jackets e-commerce platform designed for hiking and othe
 - Live Site: https://rainydays-school-project.netlify.app/
 ## Screenshots
 
-![App Screenshot](./Rainydays/images/rainydays.jpg)
+![App Screenshot](./images/rainydays.jpg)
 
 
 
