@@ -34,3 +34,6 @@ For a live version of the site, please visit: [Rainydays](https://rainydays-scho
 ## Usage
 
 Once the project is running, you can browse the outdoor jackets available on the Rainydays platform. Use the search functionality, explore product categories, and add items to your cart. Proceed to the checkout process to complete your purchase.
+
+## Contact Me
+Feel free to reach out to me on [LinkedIn](https://www.linkedin.com/in/emil-halvorsen-2380b3103/) for any inquiries or opportunities.
