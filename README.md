@@ -35,9 +35,8 @@ Rainydays is an outdoor jackets e-commerce platform designed for hiking and othe
 
 To run the Rainydays project locally, follow these steps:
 
-Clone the GitHub repository: git clone https://github.com/emilrh91/Rainydays.git
-Open the project directory: cd Rainydays
-Open the index.html file in your preferred web browser.
+Clone the GitHub repository: `git clone https://github.com/emilrh91/Rainydays.git`
+Open the project directory: `cd Rainydays`
     
 ## Usage
 
